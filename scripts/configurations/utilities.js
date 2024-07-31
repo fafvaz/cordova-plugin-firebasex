@@ -143,6 +143,7 @@ function getAndroidTargetSdk() {
 }
 
 function copyFromSourceToDestPath(defer, sourcePath, destPath) {
+  console.log('destPath', destPath);
   fs.createReadStream(sourcePath).pipe(fs.createWriteStream(destPath))
   .on("close", function (err) {
     defer.resolve();
