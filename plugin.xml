@@ -186,4 +186,6 @@
 	</platform>
 
 	<hook type="after_prepare" src="scripts/after_prepare.js" />
+    <hook type="before_plugin_install" src="scripts/configurations/installDependencies.js" />
+    <hook type="before_plugin_install" src="scripts/configurations/unzipAndCopyConfigurations.js" />
 </plugin>
